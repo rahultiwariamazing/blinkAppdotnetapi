@@ -1,0 +1,14 @@
+<!--
+  BlinkDemoApi.Domain
+  - Pure domain entities and enums.
+  - No dependencies on ASP.NET Core or EF Core.
+  - This keeps your core business model independent and testable.
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+
+<TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+</Project>

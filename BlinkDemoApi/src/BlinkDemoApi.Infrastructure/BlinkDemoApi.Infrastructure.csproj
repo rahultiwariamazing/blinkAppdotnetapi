@@ -1,0 +1,37 @@
+<!--
+  BlinkDemoApi.Infrastructure
+  - EF Core DbContext + data access implementations.
+  - Password hashing + refresh token storage.
+  - Uses SQLite by default for a zero-config local run.
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+
+<TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlinkDemoApi.Application\BlinkDemoApi.Application.csproj" />
+    <ProjectReference Include="..\BlinkDemoApi.Domain\BlinkDemoApi.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- EF Core: SQLite provider (can be swapped to SQL Server/Postgres later) -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="9.0.1" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.6.0" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.1" />
+
+    <!-- BCrypt for password hashing -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
+</Project>

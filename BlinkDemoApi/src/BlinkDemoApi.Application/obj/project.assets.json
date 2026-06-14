@@ -1,0 +1,141 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "FluentValidation/11.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BlinkDemoApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/BlinkDemoApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlinkDemoApi.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FluentValidation/11.11.0": {
+      "sha512": "cyIVdQBwSipxWG8MA3Rqox7iNbUNUTK5bfJi9tIdm4CAfH71Oo5ABLP4/QyrUwuakqpUEPGtE43BDddvEehuYw==",
+      "type": "package",
+      "path": "fluentvalidation/11.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.11.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "BlinkDemoApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj",
+      "msbuildProject": "../BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "BlinkDemoApi.Domain >= 1.0.0",
+      "FluentValidation >= 11.11.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/rahultiwari/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj",
+      "projectName": "BlinkDemoApi.Application",
+      "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj",
+      "packagesPath": "/Users/rahultiwari/.nuget/packages/",
+      "outputPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/rahultiwari/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj": {
+              "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.11.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

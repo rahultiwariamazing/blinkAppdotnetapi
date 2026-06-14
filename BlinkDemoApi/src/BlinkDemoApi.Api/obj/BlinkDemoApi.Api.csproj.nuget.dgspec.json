@@ -1,0 +1,337 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Api/BlinkDemoApi.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Api/BlinkDemoApi.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Api/BlinkDemoApi.Api.csproj",
+        "projectName": "BlinkDemoApi.Api",
+        "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Api/BlinkDemoApi.Api.csproj",
+        "packagesPath": "/Users/rahultiwari/.nuget/packages/",
+        "outputPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rahultiwari/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj": {
+                "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj"
+              },
+              "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Infrastructure/BlinkDemoApi.Infrastructure.csproj": {
+                "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Infrastructure/BlinkDemoApi.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj",
+        "projectName": "BlinkDemoApi.Application",
+        "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj",
+        "packagesPath": "/Users/rahultiwari/.nuget/packages/",
+        "outputPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rahultiwari/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj": {
+                "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj",
+        "projectName": "BlinkDemoApi.Domain",
+        "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj",
+        "packagesPath": "/Users/rahultiwari/.nuget/packages/",
+        "outputPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rahultiwari/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Infrastructure/BlinkDemoApi.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Infrastructure/BlinkDemoApi.Infrastructure.csproj",
+        "projectName": "BlinkDemoApi.Infrastructure",
+        "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Infrastructure/BlinkDemoApi.Infrastructure.csproj",
+        "packagesPath": "/Users/rahultiwari/.nuget/packages/",
+        "outputPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rahultiwari/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj": {
+                "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Application/BlinkDemoApi.Application.csproj"
+              },
+              "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj": {
+                "projectPath": "/Users/rahultiwari/Desktop/Rahul Tiwari/MainProjects/My Learning/DotNetCore/GitFolder/blinkApp/BlinkDemoApi/src/BlinkDemoApi.Domain/BlinkDemoApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Options.DataAnnotations": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

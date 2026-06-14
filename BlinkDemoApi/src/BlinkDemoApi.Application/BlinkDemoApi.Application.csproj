@@ -1,0 +1,23 @@
+<!--
+  BlinkDemoApi.Application
+  - DTOs, validators, interfaces (ports), and application services.
+  - Depends on Domain.
+  - Does NOT depend on Infrastructure (clean architecture rule).
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+
+<TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlinkDemoApi.Domain\BlinkDemoApi.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- FluentValidation for clean request validation -->
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+  </ItemGroup>
+</Project>
