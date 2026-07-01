@@ -1,0 +1,14 @@
+# Build artifacts
+**/bin/
+**/obj/
+**/publish/
+
+# Local secrets
+.env
+.env.*
+**/appsettings.Development.local.json
+**/secrets.json
+
+# OS/editor
+.DS_Store
+.vscode/

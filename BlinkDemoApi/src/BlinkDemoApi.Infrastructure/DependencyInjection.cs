@@ -21,11 +21,10 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration config)
     {
-        // PostgreSQL (Neon) connection
-        // Prefer appsettings ConnectionStrings:Default, else fallback to hardcoded Neon connection string
-        var conn =
-            config.GetConnectionString("Default")
-            ?? "Host=ep-rough-dew-a8t9i6kn-pooler.eastus2.azure.neon.tech;Port=5432;Database=neondb;Username=neondb_owner;Password=npg_D8B6ZYovUyNR;SslMode=Require;Trust Server Certificate=true;";
+        var conn = config.GetConnectionString("Default");
+
+        if (string.IsNullOrWhiteSpace(conn))
+            throw new InvalidOperationException("ConnectionStrings:Default is missing. Set it in appsettings.Development.json for local dev or via environment variable ConnectionStrings__Default.");
 
         services.AddDbContext<AppDbContext>(opt =>
             opt.UseNpgsql(conn));

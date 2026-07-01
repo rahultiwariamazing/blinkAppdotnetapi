@@ -2,6 +2,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using BlinkDemoApi.Application.Auth.Interfaces;
 using BlinkDemoApi.Domain.Entities;
 using Microsoft.Extensions.Options;
@@ -72,13 +73,18 @@ public sealed class JwtTokenService : IJwtTokenService
 /// </summary>
 public sealed class JwtOptions
 {
+    [Required]
     public string Issuer { get; set; } = "BlinkDemoApi";
+
+    [Required]
     public string Audience { get; set; } = "BlinkDemoApiClients";
 
     /// <summary>
     /// Keep this key secret. In production store it in environment variable / KeyVault.
     /// </summary>
-    public string SigningKey { get; set; } = "PLEASE_CHANGE_ME_TO_A_LONG_RANDOM_SECRET";
+    [Required]
+    [MinLength(32)]
+    public string SigningKey { get; set; } = string.Empty;
 
     public int AccessTokenMinutes { get; set; } = 60;
     public int RefreshTokenDays { get; set; } = 30;
