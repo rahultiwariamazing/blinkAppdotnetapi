@@ -1,14 +1,16 @@
-# 🚀 BlinkDemoApi
+# 🚀 QuickKartApi
 
-A Clean Architecture-based ASP.NET Core Web API built for modern e-commerce and grocery applications.
+A Clean Architecture-based ASP.NET Core Web API powering modern quick-commerce and grocery delivery applications.
 
-BlinkDemoApi provides authentication, product catalog management, cart operations, order processing, address management, and user bootstrap APIs through a secure and scalable backend architecture.
+QuickKartApi provides authentication, product catalog management, shopping cart operations, order processing, address management, and user bootstrap APIs through a secure, scalable, and production-oriented backend architecture.
 
 ---
 
 ## 📖 Overview
 
-BlinkDemoApi serves as the backend foundation for mobile and web applications that require:
+QuickKartApi serves as the backend platform powering the QuickKart commerce ecosystem.
+
+The platform provides all core capabilities required by modern grocery and quick-commerce applications, including:
 
 - User Authentication
 - Product Catalog Management
@@ -19,37 +21,38 @@ BlinkDemoApi serves as the backend foundation for mobile and web applications th
 - JWT Security
 - PostgreSQL Persistence
 
-The solution follows Clean Architecture principles to maintain separation of concerns, scalability, testability, and long-term maintainability.
+The solution follows Clean Architecture principles to ensure maintainability, scalability, testability, and long-term extensibility.
 
 ---
 
-## 🔒 Secure Configuration (Local + Production)
+## 🔒 Secure Configuration
 
-Secrets must never be committed to Git. This repository keeps placeholders only in:
+Secrets must never be committed to Git.
 
-- src/BlinkDemoApi.Api/appsettings.json
-- src/BlinkDemoApi.Api/appsettings.Development.json
+This repository intentionally stores only placeholders inside configuration files.
 
-Configuration loading order in runtime:
+Configuration loading order:
 
 1. appsettings.json
 2. appsettings.Development.json
-3. .NET User Secrets (Development only)
+3. .NET User Secrets
 4. Environment Variables
 
-### Local Development (User Secrets)
-
-Run from repo root:
+### Local Development
 
 ```bash
 dotnet user-secrets init --project src/BlinkDemoApi.Api
-dotnet user-secrets set "ConnectionStrings:Default" "<your-local-connection-string>" --project src/BlinkDemoApi.Api
+
+dotnet user-secrets set "ConnectionStrings:Default" "<your-connection-string>" --project src/BlinkDemoApi.Api
+
 dotnet user-secrets set "Jwt:SigningKey" "<your-long-random-signing-key>" --project src/BlinkDemoApi.Api
-dotnet user-secrets set "Jwt:Issuer" "BlinkDemoApi" --project src/BlinkDemoApi.Api
-dotnet user-secrets set "Jwt:Audience" "BlinkDemoApiClients" --project src/BlinkDemoApi.Api
+
+dotnet user-secrets set "Jwt:Issuer" "QuickKartApi" --project src/BlinkDemoApi.Api
+
+dotnet user-secrets set "Jwt:Audience" "QuickKartClients" --project src/BlinkDemoApi.Api
 ```
 
-Then run the API normally:
+Run the project:
 
 ```bash
 dotnet restore
@@ -57,24 +60,26 @@ dotnet build BlinkDemoApi.sln
 dotnet run --project src/BlinkDemoApi.Api
 ```
 
-### Production (Environment Variables)
+### Production
 
-Set these environment variables in your host/container:
+Configure:
 
-- ConnectionStrings__Default
-- Jwt__SigningKey
-- Jwt__Issuer
-- Jwt__Audience
-- Jwt__AccessTokenMinutes
-- Jwt__RefreshTokenDays
+```text
+ConnectionStrings__Default
+Jwt__SigningKey
+Jwt__Issuer
+Jwt__Audience
+Jwt__AccessTokenMinutes
+Jwt__RefreshTokenDays
+```
 
 Example:
 
 ```bash
 export ConnectionStrings__Default="<prod-connection-string>"
-export Jwt__SigningKey="<prod-long-random-signing-key>"
-export Jwt__Issuer="BlinkDemoApi"
-export Jwt__Audience="BlinkDemoApiClients"
+export Jwt__SigningKey="<prod-signing-key>"
+export Jwt__Issuer="QuickKartApi"
+export Jwt__Audience="QuickKartClients"
 ```
 
 ---
@@ -97,13 +102,13 @@ export Jwt__Audience="BlinkDemoApiClients"
 - Subcategories
 - Product Listings
 - Product Search
-- Category-Based Filtering
+- Category Filtering
 
 ### 🛒 Cart Management
 
 - Add To Cart
 - Update Quantity
-- Remove Cart Items
+- Remove Items
 - Clear Cart
 - Stock Validation
 
@@ -125,14 +130,14 @@ export Jwt__Audience="BlinkDemoApiClients"
 
 ### 👤 User Bootstrap API
 
-Single endpoint for:
+Single endpoint providing:
 
 - User Profile
 - Saved Addresses
 - Cart Summary
 - Recent Orders
 
-Designed to reduce frontend API calls during app startup.
+Designed to reduce application startup API calls.
 
 ---
 
@@ -177,7 +182,7 @@ Domain
 ## 📂 Solution Structure
 
 ```text
-BlinkDemoApi
+QuickKartApi
 │
 ├── docs/
 │   ├── PROJECT_DETAILS.md
@@ -192,48 +197,9 @@ BlinkDemoApi
 ├── BlinkDemoApi.sln
 ├── README.md
 ├── LICENSE
-└── NOTES.md
+├── NOTES.md
+└── SECURITY.md
 ```
-
-### Projects
-
-#### BlinkDemoApi.Api
-
-Responsible for:
-
-- Controllers
-- Middleware
-- Authentication Setup
-- Swagger
-- Configuration
-
-#### BlinkDemoApi.Application
-
-Responsible for:
-
-- Business Logic
-- DTOs
-- Service Layer
-- Validation Rules
-- Interfaces
-
-#### BlinkDemoApi.Domain
-
-Responsible for:
-
-- Entities
-- Enums
-- Core Business Objects
-
-#### BlinkDemoApi.Infrastructure
-
-Responsible for:
-
-- Entity Framework Core
-- Repositories
-- JWT Services
-- Password Hashing
-- Database Access
 
 ---
 
@@ -298,7 +264,7 @@ Receive New JWT
 
 - JWT Bearer Authentication
 - Refresh Token Rotation
-- Password Hashing using BCrypt
+- BCrypt Password Hashing
 - Refresh Token Hash Storage
 - Authorization Middleware
 
@@ -376,16 +342,10 @@ GET /api/me/bootstrap
 - Request Logging
 - Entity Framework Core Integration
 - PostgreSQL Support
-- Clean Architecture Structure
+- Clean Architecture
 - Swagger Documentation
 
-### Partially Implemented
-
-- Refresh Token UX Improvements
-- Validation Coverage Expansion
-- Schema Migration Strategy
-
-### Future Improvements
+### Platform Roadmap
 
 - CQRS + MediatR
 - Redis Caching
@@ -393,9 +353,9 @@ GET /api/me/bootstrap
 - Rate Limiting
 - Audit Logging
 - Background Jobs
-- Notification System
+- Push Notifications
 - Analytics
-- CI/CD Pipeline
+- CI/CD Pipelines
 
 ---
 
@@ -416,49 +376,53 @@ GET /api/me/bootstrap
 
 ## 🧪 API Testing
 
-Swagger UI available in development mode.
+Swagger UI is available during development.
 
-Use:
+Suggested flow:
 
 ```text
-Register
+Register User
 ↓
-Login
+Login User
 ↓
-Copy JWT Token
+Receive JWT Token
 ↓
 Authorize Swagger
 ↓
-Test Protected APIs
+Browse Catalog
+↓
+Manage Cart
+↓
+Place Order
 ```
 
 ---
 
 ## 📚 Documentation
 
-Detailed documentation is available in:
+### Technical Documentation
 
 ```text
 docs/PROJECT_DETAILS.md
 ```
 
-Complete API reference is available in:
+### API Reference
 
 ```text
 docs/API_COLLECTION.md
 ```
 
-Security guidance is available in:
+### Security Guidance
 
 ```text
 SECURITY.md
 ```
 
-These documents include:
+Documentation covers:
 
-- Full Architecture
-- Database Design
+- Architecture
 - Authentication Flow
+- Database Design
 - API Specifications
 - DTO Documentation
 - Security Review
@@ -504,9 +468,11 @@ These documents include:
 
 **Rahul Tiwari**
 
-**Mobile Architect | Cloud & AI Enthusiast**
+Mobile Application Architect | Cloud & AI Enthusiast
 
-.NET • MAUI • React Native • Flutter • Azure • Firebase • AI
+```text
+.NET • ASP.NET Core • MAUI • React Native • Flutter • Azure • Firebase • AI
+```
 
 ---
 
