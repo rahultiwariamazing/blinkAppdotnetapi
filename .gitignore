@@ -1,0 +1,16 @@
+# OS/editor
+.DS_Store
+.vscode/
+
+# Build output
+bin/
+obj/
+publish/
+
+# Logs/temp
+*.log
+*.tmp
+
+# User secrets and local settings
+*.user
+*.suo
