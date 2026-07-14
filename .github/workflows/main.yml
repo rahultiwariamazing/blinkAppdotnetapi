@@ -19,3 +19,11 @@ jobs:
       - run: dotnet restore BlinkDemoApi.sln
 
       - run: dotnet build BlinkDemoApi.sln -c Release
+
+
+      - run: dotnet publish BlinkDemoApi.sln -c Release -o publish
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quickkart-publish
+          path: publish
