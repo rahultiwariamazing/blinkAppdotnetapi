@@ -3,7 +3,7 @@ WORKDIR /src
 
 COPY . .
 
-RUN dotnet publish BlinkDemoApi.Api.csproj -c Release -o /app/publish
+RUN dotnet publish src/BlinkDemoApi.Api/BlinkDemoApi.Api.csproj -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
 
